@@ -1,0 +1,25 @@
+body {
+    background-color: lightblue;
+    display:grid;
+    place-items: center;
+
+}
+
+.card {
+    border:5px solid rgb(255, 0, 110);
+    margin:20px;
+    padding:20px;
+}
+
+.list{
+    border:3px dashed rgb(0, 0, 0);
+    margin:15px;
+    padding:20px;
+}
+
+.image{
+    border: dotted rgb(68, 0, 255);
+    margin:15px;
+    padding:20px;
+}
+

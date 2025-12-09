@@ -1,0 +1,17 @@
+div {
+    color:blue;
+    font-size:10px;
+    align-content: center;
+    align-items: center;
+}
+
+div:hover {
+    color:red;
+    font-size:20px;
+    align-items: center;
+}
+div.children {
+    border:2px solid rgb(73, 247, 30);
+    margin:10px;
+    padding:10px;
+}
