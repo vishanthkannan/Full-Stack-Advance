@@ -1,5 +1,7 @@
-const fs = require('fs');
-fs.writeFile("hello.txt","Hello World","UTF-8",(err)=>{
-    if(err) console.log(err);
-    console.log("File created")
-});
+const os = require("os");
+console.log("os :",os.platform());
+console.log("Type: ",os.type());
+console.log("Total Memory: ",os.totalmem());
+console.log("Free Memory: ",os.freemem());
+console.log("Home Dir: ",os.homedir());
+console.log("CPU Info: ",os.cpus());
