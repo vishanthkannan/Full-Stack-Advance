@@ -1,17 +1,13 @@
 import React from 'react'
-import Greeting from './Greeting'
-import Home from './Home'
 import Demo from './Demo'
+import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
-
   return (
-    <>
-      <h1 className="bg-cyan-300 text-white p-4">React</h1>
-      {/* <Greeting/> */}
-    <Home/>
-    <Demo/>
-    </>
+    </Navbar>
+    <Routes>
+      <Route path="/" element={<Demo />} />
+    </Routes>
   )
 }
 

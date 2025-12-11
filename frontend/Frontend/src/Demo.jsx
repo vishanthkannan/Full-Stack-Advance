@@ -47,22 +47,22 @@ const Demo = () => {
         const res = await fetch("https://jsonplaceholder.typicode.com/posts")
         const data = await res.json();
         setpost(data.slice(0, 5));
-  // ❗ only fix: convert to array for map
+
       } catch (err) {
         console.log("Error while fetching", err)
       }
     }
-    fetchposts();  // ❗ moved OUTSIDE the function (your main mistake)
-  }, []);          // ❗ you already wrote this, keeping same
+    fetchposts();  
+  }, []);          
 
 
   return (
     <div>
-      {post.map((post) => (    // ❗ put inside {}
+      {post.map((post) => (
         <>
-          <h2 className='bg-amber-300'>{post.id}</h2>    {/* ❗ corrected Posts → post */}
-          <p className='text-2xl bg-blue-300'>{post.title}</p>  {/* ❗ corrected posts → post */}
-          <h2 className='text-1xl bg-blue-400'>{post.body}</h2> {/* ❗ corrected Posts → post */}
+          <h2 className='bg-purple-100'>Id: {post.id}</h2>   
+          <p className='text-2xl bg-purple-200'>Title: {post.title}</p>  
+          <h2 className='text-1xl bg-purple-400'>Body: {post.body}</h2> 
         </>
       ))}
     </div>
